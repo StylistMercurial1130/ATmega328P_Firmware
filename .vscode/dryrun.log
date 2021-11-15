@@ -1,0 +1,6 @@
+make.exe --dry-run --keep-going --print-directory
+make.exe: Entering directory `e:/Embededsystems/AVR_Project'
+make.exe: Leaving directory `e:/Embededsystems/AVR_Project'
+ 
+make.exe: *** No targets.  Stop.
+ 

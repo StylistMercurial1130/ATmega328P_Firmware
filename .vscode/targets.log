@@ -1,0 +1,359 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-pc-mingw32
+ 
+
+# Make data base, printed on Mon Nov 15 12:56:37 2021
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+PLATFORMIO_IDE = 2.4.0
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := e:/Embededsystems/AVR_Project
+# default
+SHELL := D:/ 
+tools/Git/bin/sh.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVE = C:\Users\wrkkr\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from `makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# environment
+TMP = C:\Users\wrkkr\AppData\Local\Temp
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-41c6f2bb-c509-45fb-9b03-3cb156e1a8c2-sock
+# environment
+VSCODE_CWD = D:\VSCode\Microsoft VS Code
+# environment
+NO_PROXY = 127.0.0.1
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+ZES_ENABLE_SYSMAN = 1
+# makefile (from `makefile', line 17)
+INCLUDE_DIR = ./include
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\wrkkr
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+VSCODE_LOG_STACK = false
+# environment
+NUMBER_OF_PROCESSORS = 12
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives
+# automatic
+%F = $(notdir $%)
+# makefile (from `makefile', line 14)
+SOURCE_DIR = ./src
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_21232_EKNVOXSEAKLXCGYF
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+COMPUTERNAME = DESKTOP-CTI0UJ7
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = wrkkr
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\wrkkr\AppData\Roaming\Code\CachedData\3a6960b964327f0e3882ce18fcebd07ed191b316
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\DESKTOP-CTI0UJ7
+# environment
+ONEDRIVECONSUMER = C:\Users\wrkkr\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = DESKTOP-CTI0UJ7
+# environment
+PLATFORMIO_PATH = C:\Users\wrkkr\.platformio\penv\Scripts;C:\Users\wrkkr\.platformio\penv;C:\Users\wrkkr\.platformio\python3;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\C_C++\MinGW\mingw64\bin;D:\C_C++\LLVM\bin;D:\C_C++\gcc-arm-none-eabi\bin;D:\tools\GnuWin32\bin;D:\tools\Git\cmd;D:\tools\Git\bin;D:\Java\JDK17\bin;C:\Program Files\dotnet\;D:\Matlab\bin;D:\C_C++\avr-gnu\bin;D:\Python\Scripts\;D:\Python\;C:\Users\wrkkr\AppData\Local\Microsoft\WindowsApps;;D:\VSCode\Microsoft VS Code\bin;C:\Users\wrkkr\.dotnet\tools;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\C_C++\MinGW\mingw64\bin;D:\C_C++\LLVM\bin;D:\C_C++\gcc-arm-none-eabi\bin;D:\tools\GnuWin32\bin;D:\tools\Git\cmd;D:\tools\Git\bin;D:\Java\JDK17\bin;C:\Program Files\dotnet\;D:\Matlab\bin;D:\C_C++\avr-gnu\bin;D:\Python\Scripts\;D:\Python\;C:\Users\wrkkr\AppData\Local\Microsoft\WindowsApps;;D:\VSCode\Microsoft VS Code\bin;C:\Users\wrkkr\.dotnet\tools
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `makefile', line 29)
+COMPILER_FLAGS = -O1 -mmcu=$(MMCU) 
+# environment
+PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\C_C++\MinGW\mingw64\bin;D:\C_C++\LLVM\bin;D:\C_C++\gcc-arm-none-eabi\bin;D:\tools\GnuWin32\bin;D:\tools\Git\cmd;D:\tools\Git\bin;D:\Java\JDK17\bin;C:\Program Files\dotnet\;D:\Matlab\bin;D:\C_C++\avr-gnu\bin;D:\Python\Scripts\;D:\Python\;C:\Users\wrkkr\AppData\Local\Microsoft\WindowsApps;;D:\VSCode\Microsoft VS Code\bin;C:\Users\wrkkr\.dotnet\tools
+# makefile (from `makefile', line 8)
+CC = avr-gcc
+# makefile (from `makefile', line 20)
+BUILD_DIR = ./build
+# default
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := 
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `makefile', line 23)
+OUT_DIR = ./bin
+# environment
+LOCALAPPDATA = C:\Users\wrkkr\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\W 
+indowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\07d84b8f4dfc1b8557321de8f3b3446d-1.62.2-main-sock
+# environment
+HOMEPATH = \Users\wrkkr
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\wrkkr\AppData\Roaming
+# environment
+TEMP = C:\Users\wrkkr\AppData\Local\Temp
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PLATFORMIO_CALLER = vscode
+# makefile (from `makefile', line 2)
+PROJECT_NAME = application
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# makefile (from `makefile', line 11)
+OBJCOPY = avr-objcopy
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 9e0a
+# environment
+MAKELEVEL := 0
+# makefile (from `makefile', line 5)
+MMCU = atmega328p
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+VSCODE_PID = 21232
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKT 
+OP-CTI0UJ7
+# variable set hash-table stats:
+# Load=101/1024=10%, Rehash=0, Collisions=14/129=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# C:\Program Files\Common Files\Oracle\Java\javapath (key C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1633529746): 6 files, no impossibilities.
+# ./src/test (key e:/Embededsystems/AVR_Project/src/test, mtime 1636954319): No files, no impossibilities so far.
+# ./build (key e:/Embededsystems/AVR_Project/build, mtime 1636960378): 3 files, 1 impossibilities.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1622898672): 30 files, no impossibilities.
+# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1633436651): 155 files, no impossibilities.
+# . (key e:/Embededsystems/AVR_Project, mtime 1636908676): 8 files, no impossibilities.
+# build (key e:/Embededsystems/AVR_Project/build, mtime 1636960378): 3 files, 1 impossibilities.
+# D:\C_C++\MinGW\mingw64\bin (key D:/C_C++/MinGW/mingw64/bin, mtime 1625484106): 58 files, no impossibilities.
+# C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
+# D:\tools\GnuWin32\bin (key D:/tools/GnuWin32/bin, mtime 1633527240): 5 files, no impossibilities.
+# C:\WINDOWS (key C:/WINDOWS, mtime 1636546010): 115 files, no impossibilities.
+# D:\tools\Git\bin (key D:/tools/Git/bin, mtime 1633527420): 5 files, no impossibilities so far.
+# D:\C_C++\gcc-arm-none-eabi\bin (key D:/C_C++/gcc-arm-none-eabi/bin, mtime 1628052630): 35 files 
+, no impossibilities.
+# ./src/drivers/build: could not be stat'd.
+# D:\C_C++\LLVM\bin (key D:/C_C++/LLVM/bin, mtime 1625538600): 110 files, no impossibilities.
+# ./src/test/build: could not be stat'd.
+# D:\tools\Git\cmd (key D:/tools/Git/cmd, mtime 1633527436): 8 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1635767574): 2992 files, no impossibilities.
+# ./src/drivers (key e:/Embededsystems/AVR_Project/src/drivers, mtime 1636954319): No files, no impossibilities so far.
+
+# 3533 files, 2 impossibilities in 19 directories.
+
+# Implicit Rules
+
+%.o: %.c
+#  commands to execute (from `makefile', line 33):
+	@echo "Compiling"
+	$(CC) -c $(COMPILER_FLAGS) -I $(INCLUDE_DIR) -o $(BUILD_DIR)/$@ $<
+	
+
+%: ./build/main.o
+#  commands to execute (from `makefile', line 38):
+	@echo "Linking"
+	$(CC) -g -o $(OUT_DIR)/$@.elf $^
+	@echo "Generating hex file"
+	$(OBJCOPY) -O ihex $(OUT_DIR)/$@.elf $(OUT_DIR)/$@.hex
+	
+
+# 2 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+build/main.o:
+#  Imp 
+licit rule search has been done.
+#  Last modified 2021-11-15 12:42:58
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: build/main.o
+#  Command-line target.
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `all'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# % := 
+# automatic
+# * := all
+# automatic
+# + := build/main.o
+# automatic
+# | := 
+# automatic
+# < := build/main.o
+# automatic
+# ^ := build/main.o
+# automatic
+# ? := build/main.o
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/19=5%
+#  commands to execute (from `makefile', line 38):
+	@echo "Linking"
+	$(CC) -g -o $(OUT_DIR)/$@.elf $^
+	@echo "Generating hex file"
+	$(OBJCOPY) -O ihex $(OUT_DIR)/$@.elf $(OUT_DIR)/$@.hex
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+makefile: build/main.o
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `makefile'
+#  Last modified 2021-11-15 12:56:30
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `makefile', line 38):
+	@echo "Linking"
+	$(CC) -g -o $(OUT_DIR)/$@.elf $^
+	@echo "Generating hex file"
+	$(OBJCOPY) -O ihex $(OUT_DIR)/$@.elf $(OUT_DIR)/$@.hex
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search  
+has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=5/1024=0%, Rehash=0, Collisions=0/30=0%
+# VPATH Search Paths
+
+vpath %.c ./src/test;./src/drivers
+
+# 1 `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Mon Nov 15 12:56:37 2021
+
+ 
