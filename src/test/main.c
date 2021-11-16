@@ -6,18 +6,18 @@
     #define F_CPU 16000000
 #endif
 
-#include <avr/io.h>
+#include <gpio.h>
 #include <util/delay.h>
-#include <avr/interrupt.h>
 
 int main(void){
 
-    DDRB = 0xFF;
+    GPIO_Set_Pins(GPIO_PORT_B,0xB,PIN_OUPUT);
+
     while(1){
-        PORTB = 0xFF;
+
+        GPIO_Write(GPIO_PORT_B,0x1,PIN_SET);
         _delay_ms(1);
-        PORTB = 0x00;
-        _delay_ms(1);
+        GPIO_Write(GPIO_PORT_B,0x1,PIN_RESET);
 
     }
 
