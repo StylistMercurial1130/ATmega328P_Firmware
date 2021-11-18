@@ -9,16 +9,18 @@
 #include <gpio.h>
 #include <util/delay.h>
 
-int main(void){
+void main(void){
 
-    GPIO_Set_Pins(GPIO_PORT_B,0xB,PIN_OUPUT);
-
+    GPIO_Set_Pins((uint8_t *)&DDRB,0x2,PIN_OUPUT);
     while(1){
-
-        GPIO_Write(GPIO_PORT_B,0x1,PIN_SET);
-        _delay_ms(1);
-        GPIO_Write(GPIO_PORT_B,0x1,PIN_RESET);
-
+        GPIO_Write((uint8_t *)&PORTB,0x2,PIN_SET);
+        _delay_ms(2);
+        GPIO_Write((uint8_t *)&PORTB,0x2,PIN_RESET);
+        _delay_ms(2);
     }
-
+    
 }
+
+
+
+
