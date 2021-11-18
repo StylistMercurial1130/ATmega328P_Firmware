@@ -26,18 +26,15 @@ OUT_DIR = ./bin
 vpath %.c $(SOURCE_DIR)/test:$(SOURCE_DIR)/drivers
 
 #compiler flags
-COMPILER_FLAGS = -O1 -mmcu=$(MMCU) 
+COMPILER_FLAGS = -O2 -mmcu=$(MMCU) 
 
 #compiling c files and storing object files into the build folder
 %.o : %.c  
-	@echo "Compiling"
 	$(CC) -c $(COMPILER_FLAGS) -I $(INCLUDE_DIR) -o $(BUILD_DIR)/$@ $<
 
 #linking object files and generating hex files
-% : $(wildcard $(BUILD_DIR)/*.o)
-	@echo "Linking"
-	$(CC) -g -o $(OUT_DIR)/$@.elf $^
-	@echo "Generating hex file"
-	$(OBJCOPY) -O ihex $(OUT_DIR)/$@.elf $(OUT_DIR)/$@.hex
+application : $(wildcard $(BUILD_DIR)/*.o)
+	$(CC) -g -mmcu=$(MMCU) -o $(OUT_DIR)/$(PROJECT_NAME).elf $^
+	$(OBJCOPY) -j .text -j .data -j .rodata -O ihex $(OUT_DIR)/$(PROJECT_NAME).elf $(OUT_DIR)/$(PROJECT_NAME).hex
 
 
