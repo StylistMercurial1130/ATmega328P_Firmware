@@ -1,6 +1,11 @@
 
 #include <timer.h>
 
+/**
+ * @brief Set The Compare Match Output Mode for the 0C0A
+ * 
+ * @param Mode Compare Match Output Mode
+ */
 void Set_COM0A_COM_Mode(uint8_t Mode){
 
     if(Mode > 0b11)
@@ -10,6 +15,11 @@ void Set_COM0A_COM_Mode(uint8_t Mode){
 
 }
 
+/**
+ * @brief Set the Compare Match Output Mode for the 0C0B
+ * 
+ * @param Mode Compare Match Output Mode
+ */
 void Set_COM0B_COM_Mode(uint8_t Mode){
 
     if(Mode > 0b11)
@@ -21,6 +31,11 @@ void Set_COM0B_COM_Mode(uint8_t Mode){
 
 }
 
+/**
+ * @brief Set Wave Generation Mod
+ * 
+ * @param Mode Wave Generation Modes
+ */
 void Set_WGM_Mode(uint8_t Mode){
 
     if(Mode > 0b111)
