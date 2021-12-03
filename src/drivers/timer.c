@@ -49,6 +49,19 @@ void Set_WGM_Mode(uint8_t Mode){
 
 }
 
+/**
+ * @brief Sets the Clock Source for Timer 
+ * 
+ * @param Clock_Source clock source 
+ */
+void Set_TIMER0_Clock_Source(uint8_t Clock_Source){
+
+    if(Clock_Source > 0b111)
+        Clock_Source = CS_NO_PRESCALING;
+    
+    TCCR0B = (TCCR0B & 0x8) | Clock_Source;
+
+}
 
 
 
