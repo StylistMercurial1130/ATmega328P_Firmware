@@ -35,8 +35,8 @@
 #define WGM_MODE_FAST_PWM_OCR 			0b111
 
 void Set_COM0A_COM_Mode(uint8_t Mode);
-void Set_COM0B_COM_Modes(uint8_t Mode);
-
+void Set_COM0B_COM_Mode(uint8_t Mode);
+void Set_WGM_Mode(uint8_t Mode);
 
 #endif
 

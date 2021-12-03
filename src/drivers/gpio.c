@@ -63,4 +63,10 @@ void GPIO_Set_Pins(volatile uint8_t  * GPIO_Port,uint8_t GPIO_Pin,uint8_t State)
         if(State == PIN_OUPUT)
             *GPIO_Port = _CREATE_BITS(*GPIO_Port,GPIO_Pin);
 
+
 }
+//this is a test piece of code written on vim , more like a comment !
+
+
+
+
