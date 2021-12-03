@@ -8,7 +8,7 @@
  */
 void Set_COM0A_COM_Mode(uint8_t Mode){
 
-    if(Mode > 0b11)
+    if(Mode > 0b11) 
         Mode = COM_MODE_NORMAL;
     
     TCCR0A = (Mode << 6) | (TCCR0A & ~(1 << 6));

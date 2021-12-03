@@ -8,6 +8,10 @@
 #ifndef __TIMER_H__
 #define __TIMER_H__ 
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
 #ifndef __AVR_ATmega328P__
 	#define __AVR_ATmega328P__
 #endif
@@ -37,6 +41,11 @@
 void Set_COM0A_COM_Mode(uint8_t Mode);
 void Set_COM0B_COM_Mode(uint8_t Mode);
 void Set_WGM_Mode(uint8_t Mode);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 

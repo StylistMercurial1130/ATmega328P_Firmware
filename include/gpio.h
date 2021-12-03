@@ -21,5 +21,8 @@ void GPIO_Write(volatile uint8_t * GPIO_Port,uint8_t GPIO_Pin,uint8_t PIN_State)
 uint8_t GPIO_Read(volatile uint8_t * GPIO_Port,uint8_t GPIO_Pin);
 void GPIO_Set_Pins(volatile uint8_t * GPIO_Port,uint8_t GPIO_Pin,uint8_t State);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif
